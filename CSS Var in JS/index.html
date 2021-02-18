@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Customization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="img-block">
+            <img src="assets/img/theme-img.jpg" alt="a image">
+        </div>
+        <div class="img-option">
+            <h1>theme customization using js</h1>
+            <div class="input-group-wrapper">
+                <div class="input-group">
+                    <h3>font size</h3>
+                    <div class="input-box">
+                        <input type="range" name="fontsize" min="30" max="40" value="30" id="fontranger" data-pixels="px">
+                    <div class="ranger-bg"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h3>border</h3>
+                    <input type="range" name="bordersize" min="0" max="15" value="2" id="borderranger" data-pixels="px">
+                </div>
+            </div>
+            <div class="input-group-wrapper">
+                <div class="input-group">
+                    <h3>text color</h3>
+                    <input type="color" value="#304D6D" name="textcolor" id="textcolor">
+                </div>
+                <div class="input-group">
+                    <h3>bg color</h3>
+                    <input type="color" value="#304D6D" name="bgcolor" id="bgcolor">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

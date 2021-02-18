@@ -1,0 +1,114 @@
+:root{
+    --fontsize : 30px;
+    --bordersize : 2px;
+    --bgcolor : #63ADF2;
+    --textcolor : #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: uppercase;
+    color: #fff;
+}
+main{
+    background: var(--bgcolor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-block {
+    width: 500px;
+    margin-right: 50px;
+}
+.img-block > img{
+    max-width: 100%;
+    height: auto;
+    border: var(--bordersize) solid #fff;
+}
+.img-option > h1 {
+    font-size: 45px;
+    width: 575px;
+    margin-bottom: 70px;
+    color: var(--textcolor);
+}
+.input-group-wrapper {
+    width: 600px;
+    display: flex;
+}
+.input-group {
+    width: 45%;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.input-group > h3 {
+    font-size: var(--fontsize);
+    margin-bottom: 20px;
+    color: var(--textcolor);
+}
+.input-box{
+    position: relative;
+}
+input:focus{
+    outline: 0;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #304D6D;
+    position: relative;
+}
+input[type="range"]::after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 5;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #304D6D;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+  }
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  input[type="color"]{
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  input[type="color"]::after{
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #304D6D;
+    cursor: pointer;
+  }

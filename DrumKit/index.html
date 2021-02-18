@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>a</kbd>
+                <span class="sound">boom</span>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>s</kbd>
+                <span class="sound">cymbal</span>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>d</kbd>
+                <span class="sound">bongos</span>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>f</kbd>
+                <span class="sound">snare</span>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>g</kbd>
+                <span class="sound">gong</span>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>h</kbd>
+                <span class="sound">clap</span>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>j</kbd>
+                <span class="sound">kick</span>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>k</kbd>
+                <span class="sound">tom</span>
+            </div>
+            <div data-key="76" class="key">
+                <kbd>l</kbd>
+                <span class="sound">tink</span>
+            </div>
+        </div>
+
+
+        <audio data-key="65" src="assets/audio/01.mp3"></audio>
+        <audio data-key="83" src="assets/audio/02.mp3"></audio>
+        <audio data-key="68" src="assets/audio/03.mp3"></audio>
+        <audio data-key="70" src="assets/audio/04.mp3"></audio>
+        <audio data-key="71" src="assets/audio/05.mp3"></audio>
+        <audio data-key="72" src="assets/audio/06.mp3"></audio>
+        <audio data-key="74" src="assets/audio/07.mp3"></audio>
+        <audio data-key="75" src="assets/audio/08.mp3"></audio>
+        <audio data-key="76" src="assets/audio/09.mp3"></audio>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

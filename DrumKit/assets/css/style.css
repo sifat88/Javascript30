@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+main{
+    background-image: url(../img/drum-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key {
+    border: 3px solid #fff;
+    width: 100px;
+    text-align: center;
+    margin-right: 25px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.key:last-of-type{
+    margin-right: 0px;
+}
+.playing{
+    animation: playing 300ms ease;
+}
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keys > .key > kbd {
+    font-size: 70px;
+    line-height: 70px;
+    display: block;
+}
+.keys > .key > .sound{
+    font-size: 20px;
+}
+
+@keyframes playing{
+    0%{
+        scale: 1;
+        background: rgba(0,0,0,0.6);
+        border-color: #fff;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.6);
+    }
+    50%{
+        transform: scale(1.15);
+        background: rgba(0,0,0,1);
+        border-color: #fff;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+    }
+    100%{
+        scale: 1;
+        background: rgba(0,0,0,0.6);
+        border-color: #fff;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.6);
+    }
+}
